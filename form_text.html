@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <meta charse = "utf-8">
+    
+    <body>
+        <h1> 로그인 화면 </h1> # 콤보박스 사용법
+        <select name ="processor login">
+        <option value = "login"> 웹페이지에 접속하시겠습니까?</option>
+        <option value = "unlogin"> 웹페이지에 접속 안하시겠습니까?</option>
+        </select>
+        <input type = "submit">
+
+        <h1> 로그인 화면2 </h1> # 다중 콤보박스 사용법
+        <select name ="age login" multiple>
+        <option value = "18y login"> 18세 이상이십니까?</option>
+        <option value = "18n login"> 18세 미만이십니까?</option>
+        <option value = "18d login"> 잘 모르겠습니까?</option>
+        </select>
+        <input type = "submit">
+
+        <h1> 색상(단일선택) </h1>
+        <p>
+        빨간색 : <input type = "radio" name = "color" value = "red">        
+        검은색 : <input type = "radio" name = "color" value = "black" checked>
+        파란색 : <input type = "radio" name = "color" value = " blue">
+        </p>
+
+        <h1> 사이즈(다중선택) </h1>
+        <p>
+        빨간색 : <input type = "checkbox" name = "size" valued = "95">        
+        검은색 : <input type = "checkbox" name = "size" valued = "100" checked>
+        파란색 : <input type = "checkbox" name = "size" valued = "105" checked >
+        </p>
+
+        <form action ="index.html" method = "post">
+            <label for = "id_txt">id : </label>
+            <p><input type ="text" name="id" value = " 아이디를 입력하세요"></p>
+            <label for = "password_txt"> password : </label>  
+            <p><input type ="password" name="password" value = " 비밀번호를 입력하세요"></p>
+            <p>textarea:      # 여러줄 생성
+                <textarea cols = "50" rows ="2">문제사항이 있으시면 적어주세요</textarea>
+            </p>
+        </form>
+    </body>
+    </html>
+</head>

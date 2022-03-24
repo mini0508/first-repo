@@ -1,0 +1,52 @@
+/*chrome://new-tab-page/icons/google_logo.svg*/
+
+.container { 
+    width:800px;
+    height: 600px;
+    background-color: orange;
+    margin-bottom: 20px;
+    padding: 20px;
+    border : 4px solid black;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+}
+.container .item{
+    width:200px;
+    height: 200px;
+    background-color: bisque;
+    margin: 10px;
+    background-image: url("http://newsimg.hankookilbo.com/2019/04/29/201904291390027161_3.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: 20px 50px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.container .item:nth-child(1):hover {
+        background-color: rebeccapurple;
+}
+
+.container .item:nth-child(2):hover {
+    transform: rotate(45deg) scale(0.5);
+}
+
+.container .item:nth-child(3):hover {
+    transform: perspective(300px) rotateX(45deg);
+}
+
+.btn{
+    position: absolute;
+    left : 100px;
+    bottom : 200px;
+    width : 100px;
+    height : 100px;
+    padding : 10px;
+    background-color: white;
+    box-sizing: border-box;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
